@@ -4,6 +4,7 @@
 .content{
   width: 960px;
   margin: 0 auto;
+  
 }
 header {
   height: 1em;
@@ -52,11 +53,23 @@ section.mygrid {
 
  .content{
   //  display: none;
-   p{padding:20px}
+  
  }
 
  :checked + label{
    background-color: lightblue;
   color:red;}
- input + label + div{display:none;}
-  :checked + label + div{display:block;}
+ input + label + div{display:none;
+grid-area: Content;}
+
+  :checked + label + div{display:block;
+    border:1px solid black;
+    background-color: lightblue;
+  // height:auto;
+  p{padding:15px;}
+}
+
+//   label + div{
+//     display: grid;
+//    grid-template-rows: 1fr;
+// }

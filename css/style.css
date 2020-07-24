@@ -48,10 +48,6 @@ label {
   margin: 5px  0 5px 0;
 }
 
-.content p {
-  padding: 20px;
-}
-
 :checked + label {
   background-color: lightblue;
   color: red;
@@ -59,9 +55,16 @@ label {
 
 input + label + div {
   display: none;
+  grid-area: Content;
 }
 
 :checked + label + div {
   display: block;
+  border: 1px solid black;
+  background-color: lightblue;
+}
+
+:checked + label + div p {
+  padding: 15px;
 }
 /*# sourceMappingURL=style.css.map */
